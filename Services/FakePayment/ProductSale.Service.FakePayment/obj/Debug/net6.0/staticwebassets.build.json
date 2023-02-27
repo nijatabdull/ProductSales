@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "mdw/iaUY1HE2Z5qPdboODdCQNFiLxsRd++2ReZnY0Dk=",
+  "Source": "ProductSale.Service.FakePayment",
+  "BasePath": "_content/ProductSale.Service.FakePayment",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

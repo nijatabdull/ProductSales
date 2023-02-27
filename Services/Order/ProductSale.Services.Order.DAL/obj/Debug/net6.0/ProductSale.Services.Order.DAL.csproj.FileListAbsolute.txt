@@ -1,0 +1,17 @@
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\Order\ProductSale.Services.Order.DAL\bin\Debug\net6.0\ProductSale.Services.Order.DAL.deps.json
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\Order\ProductSale.Services.Order.DAL\bin\Debug\net6.0\ProductSale.Services.Order.DAL.runtimeconfig.json
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\Order\ProductSale.Services.Order.DAL\bin\Debug\net6.0\ProductSale.Services.Order.DAL.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\Order\ProductSale.Services.Order.DAL\bin\Debug\net6.0\ProductSale.Services.Order.DAL.pdb
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\Order\ProductSale.Services.Order.DAL\bin\Debug\net6.0\ProductSale.Services.Order.Core.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\Order\ProductSale.Services.Order.DAL\bin\Debug\net6.0\ProductSale.Services.Order.Core.pdb
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\Order\ProductSale.Services.Order.DAL\obj\Debug\net6.0\ProductSale.Services.Order.DAL.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\Order\ProductSale.Services.Order.DAL\obj\Debug\net6.0\ProductSale.Services.Order.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\Order\ProductSale.Services.Order.DAL\obj\Debug\net6.0\ProductSale.Services.Order.DAL.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\Order\ProductSale.Services.Order.DAL\obj\Debug\net6.0\ProductSale.Services.Order.DAL.AssemblyInfo.cs
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\Order\ProductSale.Services.Order.DAL\obj\Debug\net6.0\ProductSale.Services.Order.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\Order\ProductSale.Services.Order.DAL\obj\Debug\net6.0\ProductSale.Services.Order.DAL.csproj.CopyComplete
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\Order\ProductSale.Services.Order.DAL\obj\Debug\net6.0\ProductSale.Services.Order.DAL.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\Order\ProductSale.Services.Order.DAL\obj\Debug\net6.0\refint\ProductSale.Services.Order.DAL.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\Order\ProductSale.Services.Order.DAL\obj\Debug\net6.0\ProductSale.Services.Order.DAL.pdb
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\Order\ProductSale.Services.Order.DAL\obj\Debug\net6.0\ProductSale.Services.Order.DAL.genruntimeconfig.cache
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\Order\ProductSale.Services.Order.DAL\obj\Debug\net6.0\ref\ProductSale.Services.Order.DAL.dll

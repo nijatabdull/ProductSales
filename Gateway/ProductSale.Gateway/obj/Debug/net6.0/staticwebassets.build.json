@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ct2t6xEnAKTWtLNEQLh5jC8jnBHL5k72Wt8vrqYkimY=",
+  "Source": "ProductSale.Gateway",
+  "BasePath": "_content/ProductSale.Gateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
