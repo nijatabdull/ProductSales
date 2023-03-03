@@ -10,3 +10,15 @@ C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Shared\ProductSale
 C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Shared\ProductSale.Shared\obj\Debug\net6.0\refint\ProductSale.Shared.dll
 C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Shared\ProductSale.Shared\obj\Debug\net6.0\ProductSale.Shared.pdb
 C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Shared\ProductSale.Shared\obj\Debug\net6.0\ref\ProductSale.Shared.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Shared\ProductSale.Shared\bin\Debug\net6.0\ProductSale.Shared.deps.json
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Shared\ProductSale.Shared\bin\Debug\net6.0\ProductSale.Shared.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Shared\ProductSale.Shared\bin\Debug\net6.0\ProductSale.Shared.pdb
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Shared\ProductSale.Shared\obj\Debug\net6.0\ProductSale.Shared.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Shared\ProductSale.Shared\obj\Debug\net6.0\ProductSale.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Shared\ProductSale.Shared\obj\Debug\net6.0\ProductSale.Shared.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Shared\ProductSale.Shared\obj\Debug\net6.0\ProductSale.Shared.AssemblyInfo.cs
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Shared\ProductSale.Shared\obj\Debug\net6.0\ProductSale.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Shared\ProductSale.Shared\obj\Debug\net6.0\ProductSale.Shared.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Shared\ProductSale.Shared\obj\Debug\net6.0\refint\ProductSale.Shared.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Shared\ProductSale.Shared\obj\Debug\net6.0\ProductSale.Shared.pdb
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Shared\ProductSale.Shared\obj\Debug\net6.0\ref\ProductSale.Shared.dll

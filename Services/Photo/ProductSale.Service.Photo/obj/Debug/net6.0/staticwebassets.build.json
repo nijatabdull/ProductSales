@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+W8dE1lHsR5NrU4GssIOX8EmoU86z1az/SjuQ7rM4mk=",
+  "Hash": "apQ6/3mbembVsWz38ORVqCGwNNPQh08kiS8NbnNp05Y=",
   "Source": "ProductSale.Service.Photo",
   "BasePath": "_content/ProductSale.Service.Photo",
   "Mode": "Default",
@@ -10,17 +10,34 @@
     {
       "Name": "ProductSale.Service.Photo\\wwwroot",
       "Source": "ProductSale.Service.Photo",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSale.Microservices\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\",
       "BasePath": "_content/ProductSale.Service.Photo",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSale.Microservices\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\84216dad-58b4-49ca-80be-3a3cbce02b07.jfif",
+      "Identity": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\27d788b1-8a8b-4860-8e4f-79773cd8ec4d",
       "SourceId": "ProductSale.Service.Photo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSale.Microservices\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\",
+      "BasePath": "_content/ProductSale.Service.Photo",
+      "RelativePath": "Photos/27d788b1-8a8b-4860-8e4f-79773cd8ec4d",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photos\\27d788b1-8a8b-4860-8e4f-79773cd8ec4d"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\84216dad-58b4-49ca-80be-3a3cbce02b07.jfif",
+      "SourceId": "ProductSale.Service.Photo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\",
       "BasePath": "_content/ProductSale.Service.Photo",
       "RelativePath": "Photos/84216dad-58b4-49ca-80be-3a3cbce02b07.jfif",
       "AssetKind": "All",
@@ -32,6 +49,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Photos\\84216dad-58b4-49ca-80be-3a3cbce02b07.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\84430d03-833e-4eca-a197-33d3abc4a571",
+      "SourceId": "ProductSale.Service.Photo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\",
+      "BasePath": "_content/ProductSale.Service.Photo",
+      "RelativePath": "Photos/84430d03-833e-4eca-a197-33d3abc4a571",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photos\\84430d03-833e-4eca-a197-33d3abc4a571"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\847c04dd-869a-4fab-b71e-ce2c8e8e84a0",
+      "SourceId": "ProductSale.Service.Photo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\",
+      "BasePath": "_content/ProductSale.Service.Photo",
+      "RelativePath": "Photos/847c04dd-869a-4fab-b71e-ce2c8e8e84a0",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photos\\847c04dd-869a-4fab-b71e-ce2c8e8e84a0"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\87024a2d-aa1c-499d-81a0-f2a9c70ed599",
+      "SourceId": "ProductSale.Service.Photo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\",
+      "BasePath": "_content/ProductSale.Service.Photo",
+      "RelativePath": "Photos/87024a2d-aa1c-499d-81a0-f2a9c70ed599",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photos\\87024a2d-aa1c-499d-81a0-f2a9c70ed599"
     }
   ]
 }

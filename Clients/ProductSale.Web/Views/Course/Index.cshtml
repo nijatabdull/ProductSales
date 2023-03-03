@@ -1,0 +1,34 @@
+﻿@model IEnumerable<CourseViewModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table>
+    <a asp-controller="Course" asp-action="Create">Create Static Course</a>
+    <thead>
+        <tr>
+            <td>Picture</td>
+            <td>Course Name</td>
+            <td>Price</td>
+            <td>Duration</td>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var courseViewModel in Model)
+            {
+                <tr>
+                    <td>@courseViewModel.Picture</td>
+                    <td>@courseViewModel.Name</td>
+                    <td>@courseViewModel.Price</td>
+                    <td>@courseViewModel.FeatureViewModel?.Duration</td>
+                    <td>
+                        <a asp-controller="Course" asp-action="Delete" asp-route-id="@courseViewModel.Id" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

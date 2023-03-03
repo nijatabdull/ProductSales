@@ -1,0 +1,28 @@
+﻿@model ProductSale.Web.Models.SignInInput
+
+<div class="col-md-4 offset-md-4">
+    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+    <form asp-action="SignIn" asp-controller="Auth" method="post">
+        <div class="col-12">
+            <label asp-for="Email">Email</label>
+            <input type="email" asp-for="Email" class="form-control" id="Email">
+            <div>
+                <span class="text-danger" asp-validation-for="Email"></span>
+            </div>
+        </div>
+        <div class="col-12">
+            <label asp-for="Password">Password</label>
+            <input type="password" asp-for="Password" class="form-control" id="Password" placeholder="Password">
+            <div>
+                <span class="text-danger" asp-validation-for="Password"></span>
+            </div>
+        </div>
+        <div class="col-12">
+            <label asp-for="IsRemember">Remember me</label>
+            <input type="checkbox" asp-for="IsRemember" id="IsRemember" placeholder="IsRemember">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Confirm</button>
+        </div>
+    </form>
+</div>

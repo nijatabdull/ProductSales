@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "\\\\files.aist.group\\NugetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -83,6 +84,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "\\\\files.aist.group\\NugetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
