@@ -30,7 +30,7 @@ namespace ProductSale.Web.Controllers
 
             using Stream stream = System.IO.File.OpenRead("C:\\Users\\Admin\\Pictures\\test.jfif");
 
-            FormFile formFile = new FormFile(stream, 0, stream.Length, "photo", "test");
+            FormFile formFile = new (stream, 0, stream.Length, "photo", "test.jfif");
 
             var photo = await _photoService.Upload(formFile);
 

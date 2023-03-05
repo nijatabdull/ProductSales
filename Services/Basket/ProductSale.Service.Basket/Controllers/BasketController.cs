@@ -26,6 +26,7 @@ namespace ProductSale.Service.Basket.Controllers
         [HttpPost]
         public async Task<IActionResult> SaveOrUpdate(BasketDto basketDto)
         {
+            basketDto.UserId = _userProvider.GetUserId;
             return await ResultAsync(_basketService.SaveOrUpdate(basketDto));
         }
 

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 namespace ProductSale.Service.Photo.Controllers
 {
@@ -18,7 +19,7 @@ namespace ProductSale.Service.Photo.Controllers
 
             await formFile.CopyToAsync(stream, cancellationToken);
 
-            return Ok(formFile.FileName);
+            return Ok(JsonSerializer.Serialize(formFile.FileName));
         }
 
         [HttpDelete]

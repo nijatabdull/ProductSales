@@ -53,7 +53,7 @@ namespace ProductSale.Web.Services.Concretes
 
         public async Task<CourseViewModel> GetCourseByIdAsync(string courseId)
         {
-            var response = await _httpClient.GetAsync("courses/GetById?id=" + courseId);
+            var response = await _httpClient.GetAsync("course/get-by-id?id=" + courseId);
 
             if (response.IsSuccessStatusCode is false)
                 return default;

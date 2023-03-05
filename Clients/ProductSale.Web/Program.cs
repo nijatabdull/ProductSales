@@ -37,6 +37,20 @@ builder.Services.AddHttpClient<IPhotoService, PhotoService>(opt =>
     opt.BaseAddress = new Uri(url);
 }).AddHttpMessageHandler<ClientCredentialTokenHandler>();
 
+builder.Services.AddHttpClient<IBasketService, BasketService>(opt =>
+{
+    string url = $"{builder.Configuration["AppSetting:BaseUrl"]}{builder.Configuration["AppSetting:ServicePath:Basket"]}";
+
+    opt.BaseAddress = new Uri(url);
+}).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
+
+builder.Services.AddHttpClient<IDiscountService, DiscountService>(opt =>
+{
+    string url = $"{builder.Configuration["AppSetting:BaseUrl"]}{builder.Configuration["AppSetting:ServicePath:Discount"]}";
+
+    opt.BaseAddress = new Uri(url);
+}).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
+
 builder.Services.AddScoped<ResourceOwnerPasswordTokenHandler>();
 builder.Services.AddScoped<ClientCredentialTokenHandler>();
 
