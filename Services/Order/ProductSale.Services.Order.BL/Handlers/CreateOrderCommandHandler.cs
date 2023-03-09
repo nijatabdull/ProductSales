@@ -19,21 +19,28 @@ namespace ProductSale.Services.Order.BL.Handlers
 
         public async Task<Response> Handle(CreateOrderCommand request, CancellationToken cancellationToken)
         {
-            Address address = new(request.AddressDto.Province, request.AddressDto.District, 
+            try
+            {
+                Address address = new(request.AddressDto.Province, request.AddressDto.District,
                             request.AddressDto.Street, request.AddressDto.ZipCode, request.AddressDto.Line);
 
-            Core.Models.Order order = new(address, request.BuyerId);
+                Core.Models.Order order = new(address, request.BuyerId);
 
-            request.OrderItemDtos.ForEach(x =>
+                request.OrderItemDtos.ForEach(x =>
+                {
+                    order.AddOrderItem(x.ProductId, x.ProductName, x.PictureUrl, x.Price);
+                });
+
+                await _orderDbContext.Orders.AddAsync(order);
+
+                await _orderDbContext.SaveChangesAsync();
+
+                return new SuccessResponse<CreatedOrderDto>(new CreatedOrderDto() { OrderId = order.Id });
+            }
+            catch (Exception exp)
             {
-                order.AddOrderItem(x.ProductId, x.ProductName, x.PictureUrl, x.Price);
-            });
-
-            await _orderDbContext.Orders.AddAsync(order);
-
-            await _orderDbContext.SaveChangesAsync();
-
-            return new SuccessResponse<CreatedOrderDto>(new CreatedOrderDto() { OrderId = order.Id });
+                throw;
+            }
         }
     }
 }

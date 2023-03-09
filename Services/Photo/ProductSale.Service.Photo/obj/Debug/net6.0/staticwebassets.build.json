@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+XfX9JvWYhRsZiEsjTkb+LG5+ske/5838fYdyWPsC3U=",
+  "Hash": "csPmvBks/cG3lAk29InPUQBc8zxx0Eb/44AuCojubXA=",
   "Source": "ProductSale.Service.Photo",
   "BasePath": "_content/ProductSale.Service.Photo",
   "Mode": "Default",
@@ -202,6 +202,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Photos\\cd432652-7a91-4047-be7f-c707fc5d060c.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\f304b1df-1dbe-4071-8b7f-c5b158b3e6fd.jfif",
+      "SourceId": "ProductSale.Service.Photo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\",
+      "BasePath": "_content/ProductSale.Service.Photo",
+      "RelativePath": "Photos/f304b1df-1dbe-4071-8b7f-c5b158b3e6fd.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photos\\f304b1df-1dbe-4071-8b7f-c5b158b3e6fd.jfif"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\test.jfif",

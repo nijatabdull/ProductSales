@@ -8,6 +8,7 @@
 <table>
     <a asp-controller="Course" asp-action="Create">Create Static Course</a>
     <a style="margin-left:50px" asp-controller="Basket" asp-action="Index">Basket</a>
+    <div style="margin-left:50px">OrderId: @TempData["OrderId"]</div>
     <thead>
         <tr>
             <td>Picture</td>
@@ -18,20 +19,23 @@
     </thead>
     <tbody>
         @{
-            foreach (var courseViewModel in Model)
+            if (Model != null)
             {
-                <tr>
-                    <td>@courseViewModel.Picture</td>
-                    <td>@courseViewModel.Name</td>
-                    <td>@courseViewModel.Price</td>
-                    <td>@courseViewModel.FeatureViewModel?.Duration</td>
-                    <td>
-                        <a asp-controller="Course" asp-action="Delete" asp-route-id="@courseViewModel.Id" class="btn btn-danger btn-sm">Delete</a>
-                    </td>
-                    <td>
-                        <a asp-controller="Basket" asp-action="AddBasketItem" asp-route-courseId="@courseViewModel.Id" class="btn btn-info btn-sm">Add to Basket</a>
-                    </td>
-                </tr>
+                foreach (var courseViewModel in Model)
+                {
+                    <tr>
+                        <td>@courseViewModel.Picture</td>
+                        <td>@courseViewModel.Name</td>
+                        <td>@courseViewModel.Price</td>
+                        <td>@courseViewModel.FeatureViewModel?.Duration</td>
+                        <td>
+                            <a asp-controller="Course" asp-action="Delete" asp-route-id="@courseViewModel.Id" class="btn btn-danger btn-sm">Delete</a>
+                        </td>
+                        <td>
+                            <a asp-controller="Basket" asp-action="AddBasketItem" asp-route-courseId="@courseViewModel.Id" class="btn btn-info btn-sm">Add to Basket</a>
+                        </td>
+                    </tr>
+                }
             }
         }
     </tbody>

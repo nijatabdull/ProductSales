@@ -4,40 +4,46 @@
 @model BasketViewModel
 <h1>Index</h1>
 
-<table>
-    <a asp-controller="Course" asp-action="Index">Index</a>
-    <a style="margin-left:20px" asp-controller="Basket" asp-action="ApplyDiscount">Apply Discount</a>
-    <a style="margin-left:20px" asp-controller="Basket" asp-action="CancelApplyDiscount">Cancel Apply Discount</a>
-    <thead>
-        <tr>
-            <td style="margin-right:10px">Course </td>
-            <td style="margin-right:10px">Price</td>
-            <td style="margin-right:10px">Discount Price</td>
-        </tr>
-    </thead>
-    <tbody>
-        @{
-            foreach (var basketItemViewModel in Model.BasketItemViewModels)
-            {
+@{
+    if(Model!=null && Model.BasketItemViewModels != null)
+    {
+        <table>
+            <a asp-controller="Course" asp-action="Index">Index</a>
+            <a style="margin-left:20px" asp-controller="Basket" asp-action="ApplyDiscount">Apply Discount</a>
+            <a style="margin-left:20px" asp-controller="Basket" asp-action="CancelApplyDiscount">Cancel Apply Discount</a>
+            <a style="margin-left:20px" asp-controller="Order" asp-action="Create">Make Order</a>
+            <thead>
                 <tr>
-                    <td style="margin-right:10px">@basketItemViewModel.CourseName</td>
-                    <td style="margin-right:10px">@basketItemViewModel.Price</td>
-                    <td style="margin-right:10px">@basketItemViewModel.DiscountAppliedPrice</td>
-                    <td style="margin-right:10px">
-                        <a asp-controller="Basket" asp-action="Delete" asp-route-courseId="@basketItemViewModel.CourseId" class="btn btn-danger btn-sm">Delete</a>
-                    </td>
+                    <td style="margin-right:10px">Course </td>
+                    <td style="margin-right:10px">Price</td>
+                    <td style="margin-right:10px">Discount Price</td>
                 </tr>
-            }
-        }
-    </tbody>
-    <div>
-        <div>Total: @Model.TotalPrice</div>
-        @{
-            if(string.IsNullOrEmpty(Model.DiscountCode) is false)
-            {
-                <div>DiscountCode: @Model.DiscountCode</div>
-            }
-        }
-    </div>
-</table>
+            </thead>
+            <tbody>
+                @{
+                    foreach (var basketItemViewModel in Model.BasketItemViewModels)
+                    {
+                        <tr>
+                            <td style="margin-right:10px">@basketItemViewModel.CourseName</td>
+                            <td style="margin-right:10px">@basketItemViewModel.Price</td>
+                            <td style="margin-right:10px">@basketItemViewModel.DiscountAppliedPrice</td>
+                            <td style="margin-right:10px">
+                                <a asp-controller="Basket" asp-action="Delete" asp-route-courseId="@basketItemViewModel.CourseId" class="btn btn-danger btn-sm">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+            <div>
+                <div>Total: @Model.TotalPrice</div>
+                @{
+                    if (string.IsNullOrEmpty(Model.DiscountCode) is false)
+                    {
+                        <div>DiscountCode: @Model.DiscountCode</div>
+                    }
+                }
+            </div>
+        </table>
+    }
+}
 

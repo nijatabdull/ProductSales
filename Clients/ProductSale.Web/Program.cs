@@ -23,6 +23,8 @@ builder.Services.AddHttpClient<IIdentityService, IdentityService>();
 
 builder.Services.AddHttpClient<IClientTokenService, ClientTokenService>();
 
+
+
 builder.Services.AddHttpClient<ICatalogService, CatalogService>(opt =>
 {
     string url = $"{builder.Configuration["AppSetting:BaseUrl"]}{builder.Configuration["AppSetting:ServicePath:Catalog"]}";
@@ -50,6 +52,23 @@ builder.Services.AddHttpClient<IDiscountService, DiscountService>(opt =>
 
     opt.BaseAddress = new Uri(url);
 }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
+
+builder.Services.AddHttpClient<IPaymentService, PaymentService>(opt =>
+{
+    string url = $"{builder.Configuration["AppSetting:BaseUrl"]}{builder.Configuration["AppSetting:ServicePath:Payment"]}";
+
+    opt.BaseAddress = new Uri(url);
+}).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
+
+builder.Services.AddHttpClient<IOrderService, OrderService>(opt =>
+{
+    string url = $"{builder.Configuration["AppSetting:BaseUrl"]}{builder.Configuration["AppSetting:ServicePath:Order"]}";
+
+    opt.BaseAddress = new Uri(url);
+}).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
+
+
+
 
 builder.Services.AddScoped<ResourceOwnerPasswordTokenHandler>();
 builder.Services.AddScoped<ClientCredentialTokenHandler>();

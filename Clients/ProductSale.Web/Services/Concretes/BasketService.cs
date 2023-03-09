@@ -1,4 +1,5 @@
 ﻿using ProductSale.Shared.Infrastructure.Response;
+using ProductSale.Shared.Services.Abstractions;
 using ProductSale.Web.Models.Basket;
 using ProductSale.Web.Models.Discount;
 using ProductSale.Web.Services.Abstractions;
@@ -9,11 +10,13 @@ namespace ProductSale.Web.Services.Concretes
     {
         private readonly HttpClient _httpClient;
         private readonly IDiscountService _discountService;
+        private readonly IUserProvider _userProvider;
 
-        public BasketService(HttpClient httpClient, IDiscountService discountService)
+        public BasketService(HttpClient httpClient, IDiscountService discountService, IUserProvider userProvider)
         {
             _httpClient = httpClient;
             _discountService = discountService;
+            _userProvider = userProvider;
         }
 
         public async Task AddBasketItem(BasketItemViewModel basketItemViewModel)
@@ -31,11 +34,14 @@ namespace ProductSale.Web.Services.Concretes
             }
             else
             {
-                BasketViewModel basketViewModelNew = new();
+                BasketViewModel basketViewModelNew = new()
+                {
+                    UserId = _userProvider.GetUserId
+                };
 
                 basketViewModelNew.BasketItemViewModels = new List<BasketItemViewModel> { basketItemViewModel };
 
-                await SaveOrUpdate(basket);
+                await SaveOrUpdate(basketViewModelNew);
             }
         }
 
