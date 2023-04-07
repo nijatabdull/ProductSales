@@ -19,11 +19,11 @@ services:
         context: .
         dockerfile: Services/Catalog/ProductSale.Service.Catalog/DockerFile
   
-  #identityserver.api:
-    #image: identityserver_api_image
-    #build:
-        #context: .
-        #dockerfile: IdentityServer/ProductSale.IdentityServer/DockerFile
+  identityserver.api:
+    image: identityserver_api_image
+    build:
+        context: .
+        dockerfile: IdentityServer/ProductSale.IdentityServer/DockerFile
 
 volumes:
   catalogdb_volume:

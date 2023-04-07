@@ -5,14 +5,14 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 
-COPY ["Shared/ProductSale.Shared/ProductSale.Shared.csproj", "PS.Shared/"]
-COPY ["Services/Catalog/ProductSale.Service.Catalog/ProductSale.Service.Catalog.csproj", "PS.Service.Catalog/"]
+COPY ["Shared/ProductSale.Shared/ProductSale.Shared.csproj", "Shared/ProductSale.Shared/"]
+COPY ["Services/Catalog/ProductSale.Service.Catalog/ProductSale.Service.Catalog.csproj", "Services/Catalog/ProductSale.Service.Catalog/"]
 
-RUN dotnet restore "PS.Service.Catalog/ProductSale.Service.Catalog.csproj"
+RUN dotnet restore "Services/Catalog/ProductSale.Service.Catalog/ProductSale.Service.Catalog.csproj"
 
 COPY . .
 
-WORKDIR "/src/PS.Service.Catalog"
+WORKDIR "/src/Services/Catalog/ProductSale.Service.Catalog"
 RUN dotnet build "ProductSale.Service.Catalog.csproj" -c Release -o /app/build
 
 FROM build AS publish

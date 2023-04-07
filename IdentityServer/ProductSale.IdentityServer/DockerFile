@@ -4,13 +4,13 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["IdentityServer/ProductSale.IdentityServer/ProductSale.IdentityServer.csproj","ProductSale.IdentityServer/"]
+COPY ["IdentityServer/ProductSale.IdentityServer/ProductSale.IdentityServer.csproj","IdentityServer/ProductSale.IdentityServer/"]
 
-RUN dotnet restore "ProductSale.IdentityServer/ProductSale.IdentityServer.csproj"
+RUN dotnet restore "IdentityServer/ProductSale.IdentityServer/ProductSale.IdentityServer.csproj"
 
 COPY . .
 
-WORKDIR "/src/ProductSale.IdentityServer"
+WORKDIR "/src/IdentityServer/ProductSale.IdentityServer"
 RUN dotnet build "ProductSale.IdentityServer.csproj" -c Release -o /app/build
 
 FROM build AS publish
