@@ -53,5 +53,23 @@ namespace ProductSale.Web.Controllers
 
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Update()
+        {
+            await _catalogService.UpdateCourseAsync(new Models.Catalog.CourseViewModel()
+            {
+                Id = "6404f7124f728397ad79567c",
+                Name = "Python",
+                CategoryId = "63e47fe7ee26be4f885d321f",
+                CategoryViewModel = new Models.Catalog.CategoryViewModel(),
+                FeatureViewModel= new Models.Catalog.FeatureViewModel(),
+                Picture = "fuck",
+                Price= 31,
+                UserId = _userProvider.GetUserId
+            });
+
+            return RedirectToAction("Index");
+        }
     }
 }

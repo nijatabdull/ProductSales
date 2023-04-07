@@ -14,7 +14,7 @@ namespace ProductSale.Web.Services.Concretes
 
         public async Task<bool> ReceivePayment(PaymentInputModel paymentInputModel)
         {
-            var res = await _httpClient.GetAsync("payment/index");
+            var res = await _httpClient.PostAsJsonAsync("payment/receivepayment", paymentInputModel);
 
             return res.IsSuccessStatusCode;
         }

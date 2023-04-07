@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
+using ProductSale.Gateway.DelegateHandlers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,7 +21,9 @@ builder.Services.AddAuthentication()
         opt.RequireHttpsMetadata = false;
     });
 
-builder.Services.AddOcelot(builder.Configuration);
+builder.Services.AddOcelot(builder.Configuration).AddDelegatingHandler<TokenExchangeDelegateHandler>();
+
+builder.Services.AddHttpClient<TokenExchangeDelegateHandler>();
 
 var app = builder.Build();
 

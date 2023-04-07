@@ -70,7 +70,7 @@ namespace ProductSale.Web.Services.Concretes
 
         public async Task<bool> UpdateCourseAsync(CourseViewModel course)
         {
-            var response = await _httpClient.PutAsJsonAsync("Catalog/Update", course);
+            var response = await _httpClient.PutAsJsonAsync("course/update", course);
 
             return response.IsSuccessStatusCode;
         }

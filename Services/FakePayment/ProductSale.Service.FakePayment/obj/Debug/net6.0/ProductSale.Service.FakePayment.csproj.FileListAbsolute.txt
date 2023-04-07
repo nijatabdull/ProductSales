@@ -76,3 +76,15 @@ C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSal
 C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.pdb
 C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.genruntimeconfig.cache
 C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ref\ProductSale.Service.FakePayment.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\MassTransit.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\MassTransit.Abstractions.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\MassTransit.AspNetCoreIntegration.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\MassTransit.RabbitMqTransport.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Shared.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Shared.pdb

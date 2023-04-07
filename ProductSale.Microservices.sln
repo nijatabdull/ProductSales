@@ -49,7 +49,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductSale.Gateway", "Gate
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{287155D3-2868-43AF-B257-6322E61774E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductSale.Web", "Clients\ProductSale.Web\ProductSale.Web.csproj", "{0792ED13-5EC2-4A46-A9CA-29952515358E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductSale.Web", "Clients\ProductSale.Web\ProductSale.Web.csproj", "{0792ED13-5EC2-4A46-A9CA-29952515358E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B0742948-1847-4BAC-B851-E90FD7A5E73F}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.override.yml = docker-compose.override.yml
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

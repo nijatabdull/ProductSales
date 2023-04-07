@@ -1,4 +1,7 @@
-﻿namespace ProductSale.Web.Models.Payment
+﻿using ProductSale.Web.Models.Order;
+using System.Text.Json.Serialization;
+
+namespace ProductSale.Web.Models.Payment
 {
     public class PaymentInputModel
     {
@@ -7,5 +10,7 @@
         public string Expiration { get; set; }
         public string CVV { get; set; }
         public decimal TotalPrice { get; set; }
+        [JsonPropertyName("order")]
+        public OrderCreateInput OrderCreateInput { get; set; }
     }
 }

@@ -1,0 +1,24 @@
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+WORKDIR /app
+EXPOSE 80
+
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /src
+COPY ["IdentityServer/ProductSale.IdentityServer/ProductSale.IdentityServer.csproj","ProductSale.IdentityServer/"]
+
+RUN dotnet restore "ProductSale.IdentityServer/ProductSale.IdentityServer.csproj"
+
+COPY . .
+
+WORKDIR "/src/ProductSale.IdentityServer"
+RUN dotnet build "ProductSale.IdentityServer.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "ProductSale.IdentityServer.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish app/publish .
+
+ENTRYPOINT ["dotnet","ProductSale.IdentityServer.dll"]
+

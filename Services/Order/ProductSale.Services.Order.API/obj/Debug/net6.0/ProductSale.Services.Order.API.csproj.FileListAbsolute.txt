@@ -156,3 +156,13 @@ C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\Order\ProductSale.Serv
 C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\Order\ProductSale.Services.Order.API\obj\Debug\net6.0\ProductSale.Services.Order.API.pdb
 C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\Order\ProductSale.Services.Order.API\obj\Debug\net6.0\ProductSale.Services.Order.API.genruntimeconfig.cache
 C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\Order\ProductSale.Services.Order.API\obj\Debug\net6.0\ref\ProductSale.Services.Order.API.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\Order\ProductSale.Services.Order.API\bin\Debug\net6.0\MassTransit.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\Order\ProductSale.Services.Order.API\bin\Debug\net6.0\MassTransit.Abstractions.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\Order\ProductSale.Services.Order.API\bin\Debug\net6.0\MassTransit.AspNetCoreIntegration.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\Order\ProductSale.Services.Order.API\bin\Debug\net6.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\Order\ProductSale.Services.Order.API\bin\Debug\net6.0\MassTransit.RabbitMqTransport.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\Order\ProductSale.Services.Order.API\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\Order\ProductSale.Services.Order.API\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\Order\ProductSale.Services.Order.API\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\Order\ProductSale.Services.Order.API\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\Order\ProductSale.Services.Order.API\bin\Debug\net6.0\System.Text.Json.dll

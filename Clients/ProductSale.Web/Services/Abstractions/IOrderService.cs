@@ -8,7 +8,7 @@ namespace ProductSale.Web.Services.Abstractions
         Task<OrderCreatedViewModel> CreateOrder(CheckoutInputModel checkoutInputModel);
 
         //async - RABBIT MQ
-        Task SuspendOrder(CheckoutInputModel checkoutInputModel);
+        Task<OrderSuspendViewModel> SuspendOrder(CheckoutInputModel checkoutInputModel);
 
         Task<List<OrderViewModel>> GetOrders();
     }

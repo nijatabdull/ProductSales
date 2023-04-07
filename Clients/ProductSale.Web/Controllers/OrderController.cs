@@ -16,7 +16,7 @@ namespace ProductSale.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> Create()
         {
-            OrderCreatedViewModel orderCreatedViewModel = await _orderService.CreateOrder(new CheckoutInputModel()
+            CheckoutInputModel checkoutInputModel = new CheckoutInputModel()
             {
                 Street = "Baxcali",
                 District = "Masazir",
@@ -27,9 +27,14 @@ namespace ProductSale.Web.Controllers
                 CVV = "456",
                 Expiration = "12/23",
                 Line = "asd"
-            });
+            };
 
-            TempData["OrderId"] = orderCreatedViewModel.OrderId;
+            //sycn
+            //OrderCreatedViewModel orderCreatedViewModel = await _orderService.CreateOrder();
+            //TempData["OrderId"] = orderCreatedViewModel.OrderId;
+
+            //async
+            OrderSuspendViewModel orderSuspendViewModel = await _orderService.SuspendOrder(checkoutInputModel);
 
             return RedirectToAction("Index", "Course");
         }

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Mass =MassTransit;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using ProductSale.Service.Catalog.Dtos;
@@ -7,6 +8,7 @@ using ProductSale.Service.Catalog.Services.Abstractions;
 using ProductSale.Service.Catalog.Statics.Models;
 using ProductSale.Shared.Infrastructure.Response;
 using ProductSale.Shared.Infrastructure.Response.Base;
+using ProductSale.Shared.Infrastructure.MassTransit.Events;
 
 namespace ProductSale.Service.Catalog.Services.Concretes
 {
@@ -15,8 +17,10 @@ namespace ProductSale.Service.Catalog.Services.Concretes
         private readonly IMongoCollection<Course> _courses;
         private readonly IMongoCollection<Category> _categories;
         private readonly IMapper _mapper;
+        private readonly Mass.IPublishEndpoint _publishEndpoint;
+
         public CourseService(IOptionsSnapshot<DatabaseConfig> optionsSnapshot,
-                               IMapper mapper)
+                               IMapper mapper, Mass.IPublishEndpoint publishEndpoint)
         {
             MongoClient mongoClient = new(optionsSnapshot.Value.ConnectionString);
             IMongoDatabase mongoDatabase = mongoClient.GetDatabase(optionsSnapshot.Value.DatabaseName);
@@ -24,6 +28,7 @@ namespace ProductSale.Service.Catalog.Services.Concretes
             _categories = mongoDatabase.GetCollection<Category>(optionsSnapshot.Value.CategoryListName);
 
             _mapper = mapper;
+            _publishEndpoint = publishEndpoint;
         }
         public async Task<Response> CreateAsync(CourseDto courseDto)
         {
@@ -76,10 +81,24 @@ namespace ProductSale.Service.Catalog.Services.Concretes
 
             Course course = _mapper.Map<Course>(courseDto);
 
-            var result = await _courses.FindOneAndReplaceAsync(x=>x.Id == courseDto.Id, course);
-            
-            if(result is null)
-                return new ErrorResponse("Course not found");
+            try
+            {
+                var result = await _courses.FindOneAndReplaceAsync(x => x.Id == courseDto.Id, course);
+
+                if (result is null)
+                    return new ErrorResponse("Course not found");
+            }
+            catch (Exception exp)
+            {
+
+                throw;
+            }
+
+            await _publishEndpoint.Publish<CourseNameChangedEvent>(new CourseNameChangedEvent()
+            {
+                CourseId = course.Id,
+                CourseName = course.Name,
+            });
 
             return new SuccessResponse<CourseDto>(courseDto);
         }

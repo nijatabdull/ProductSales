@@ -67,8 +67,8 @@ public static class Config
                 AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                 ClientSecrets = { new Secret("mvc-12345".Sha256()) },
 
-                AllowedScopes = {"basket_fullpermission","discount_fullpermission",
-                     "order_fullpermission", "payment_fullpermission","gateway_fullpermission",
+                AllowedScopes = {"basket_fullpermission",
+                     "order_fullpermission", "gateway_fullpermission",
                                 IdentityServerConstants.StandardScopes.OpenId,
                                 IdentityServerConstants.StandardScopes.Email,
                                 IdentityServerConstants.StandardScopes.Profile,
@@ -81,6 +81,17 @@ public static class Config
                 AbsoluteRefreshTokenLifetime= 60 * 60 * 24 * 60,
                 RefreshTokenUsage = TokenUsage.ReUse,
                 AllowOfflineAccess= true,
+            },
+
+             new Client
+            {
+                ClientId = "TokenExchangeClient",
+                ClientName = "Token Exchange Client",
+
+                AllowedGrantTypes = new []{"urn:ietf:params:oauth:grant-type:token-exchange"},
+                ClientSecrets = { new Secret("mvc-12345".Sha256()) },
+
+                AllowedScopes = { "discount_fullpermission", "payment_fullpermission", IdentityServerConstants.StandardScopes.OpenId, }
             },
         };
 }

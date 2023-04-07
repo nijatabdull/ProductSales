@@ -42,7 +42,9 @@ internal static class HostingExtensions
             .AddInMemoryApiScopes(Config.ApiScopes)
             .AddInMemoryClients(Config.Clients)
             .AddAspNetIdentity<ApplicationUser>()
-            .AddResourceOwnerValidator<IdentityServerPasswordValidator>(); // ????????????
+
+            .AddResourceOwnerValidator<IdentityServerPasswordValidator>()
+            .AddExtensionGrantValidator<TokenExchangeExtensionGrantValidator>(); // ????????????
 
 
         builder.Services.AddAuthentication()

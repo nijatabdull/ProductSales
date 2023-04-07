@@ -1,8 +1,10 @@
+using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using ProductSale.Services.Order.BL.Handlers;
+using ProductSale.Services.Order.BL.MassTransit.Consumer;
 using ProductSale.Services.Order.DAL;
 using ProductSale.Shared.Services.Abstractions;
 using ProductSale.Shared.Services.Concretes;
@@ -12,6 +14,31 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddMassTransit(opt =>
+{
+    opt.AddConsumer<CreateOrderMessageCommandConsumer>();
+    opt.AddConsumer<CourseNameChangedEventConsumer>();
+
+    opt.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host(builder.Configuration["RabbitMQUrl"], "/", host =>
+        {
+            host.Username("guest");
+            host.Password("guest");
+        });
+
+        cfg.ReceiveEndpoint("create-order", e =>
+        {
+            e.ConfigureConsumer<CreateOrderMessageCommandConsumer>(context);
+        });
+
+        cfg.ReceiveEndpoint("course-name-change", e =>
+        {
+            e.ConfigureConsumer<CourseNameChangedEventConsumer>(context);
+        });
+    });
+});
 
 builder.Services.AddControllers(options =>
 {
