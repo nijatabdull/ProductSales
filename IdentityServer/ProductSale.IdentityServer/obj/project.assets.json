@@ -3245,19 +3245,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Nicat\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\IdentityServer\\ProductSale.IdentityServer\\ProductSale.IdentityServer.csproj",
+      "projectUniqueName": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\IdentityServer\\ProductSale.IdentityServer\\ProductSale.IdentityServer.csproj",
       "projectName": "ProductSale.IdentityServer",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\IdentityServer\\ProductSale.IdentityServer\\ProductSale.IdentityServer.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\IdentityServer\\ProductSale.IdentityServer\\obj\\",
+      "projectPath": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\IdentityServer\\ProductSale.IdentityServer\\ProductSale.IdentityServer.csproj",
+      "packagesPath": "C:\\Users\\Nicat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\IdentityServer\\ProductSale.IdentityServer\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nicat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3265,7 +3269,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "\\\\files.aist.group\\NugetStore": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3336,7 +3339,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -69,7 +69,7 @@ services:
     container_name: identityserver.api
     environment:
         - ASPNETCORE_ENVIRONMENT=Development
-        - DatabaseSettings:ConnectionString:DefaultConnection=Server=identitydb;Database=IdentityServerDb;User=sa;Password=Nic@t12345
+        - ConnectionStrings:DefaultConnection=Server=identitydb,1433;Database=IdentityServerDb;User=sa;Password=Nic@t12345
     ports:
         - "5001:80"
     depends_on:
