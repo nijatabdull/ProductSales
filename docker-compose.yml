@@ -25,6 +25,12 @@ services:
         context: .
         dockerfile: IdentityServer/ProductSale.IdentityServer/DockerFile
 
+  basket.api:
+    image: basket_api_image
+    build:
+        context: .
+        dockerfile: Services/Basket/ProductSale.Service.Basket/DockerFile
+
 volumes:
   catalogdb_volume:
   discountdb_volume:
