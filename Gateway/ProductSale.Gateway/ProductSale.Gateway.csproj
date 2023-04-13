@@ -12,4 +12,6 @@
     <PackageReference Include="Ocelot" Version="18.0.0" />
   </ItemGroup>
 
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1production_1json__JsonSchema="https://deta.space/assets/spacefile.schema.json" /></VisualStudio></ProjectExtensions>
+
 </Project>

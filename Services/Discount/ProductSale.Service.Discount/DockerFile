@@ -1,0 +1,28 @@
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
+WORKDIR /app
+EXPOSE 80
+
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /src
+
+COPY ["Shared/ProductSale.Shared/ProductSale.Shared.csproj", "Shared/ProductSale.Shared/"]
+COPY ["Services/Discount/ProductSale.Service.Discount/ProductSale.Service.Discount.csproj", "Services/Discount/ProductSale.Service.Discount/"]
+
+RUN dotnet restore "Services/Discount/ProductSale.Service.Discount/ProductSale.Service.Discount.csproj"
+
+COPY . .
+
+WORKDIR "/src/Services/Discount/ProductSale.Service.Discount"
+
+RUN dotnet build "ProductSale.Service.Discount.csproj" -c Release -o /app/build
+
+FROM build as publish
+RUN dotnet publish "ProductSale.Service.Discount.csproj" -c Release -o /app/publish
+
+FROM runtime as final
+WORKDIR /app
+COPY --from=publish /app/publish .
+
+ENTRYPOINT [ "dotnet", "ProductSale.Service.Discount.dll" ]
+
+

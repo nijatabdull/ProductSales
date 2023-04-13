@@ -1,0 +1,26 @@
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+WORKDIR /app
+EXPOSE 80
+
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /src
+
+COPY ["Shared/ProductSale.Shared/ProductSale.Shared.csproj", "Shared/ProductSale.Shared/"]
+COPY ["Services/FakePayment/ProductSale.Service.FakePayment/ProductSale.Service.FakePayment.csproj", "Services/FakePayment/ProductSale.Service.FakePayment/"]
+
+RUN dotnet restore "Services/FakePayment/ProductSale.Service.FakePayment/ProductSale.Service.FakePayment.csproj"
+
+COPY . .
+
+WORKDIR "/src/Services/FakePayment/ProductSale.Service.FakePayment"
+
+RUN dotnet build "ProductSale.Service.FakePayment.csproj" -c Release -o /app/build
+
+FROM build as publish
+RUN dotnet publish "ProductSale.Service.FakePayment.csproj" -c Release -o /app/publish
+
+FROM base as final
+WORKDIR /app
+COPY --from=publish /app/publish .
+
+ENTRYPOINT [ "dotnet", "ProductSale.Service.FakePayment.dll" ]

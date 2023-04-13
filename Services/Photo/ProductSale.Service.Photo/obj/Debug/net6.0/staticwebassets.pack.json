@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\1cad3abb-1fa4-4761-94c4-dd8cceff4edc.jfif",
+      "PackagePath": "staticwebassets\\Photos\\1cad3abb-1fa4-4761-94c4-dd8cceff4edc.jfif"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\27d788b1-8a8b-4860-8e4f-79773cd8ec4d",
       "PackagePath": "staticwebassets\\Photos"
     },
@@ -11,6 +15,14 @@
     {
       "Id": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\448478bf-d2fa-43a1-9534-c9d39474f9f1",
       "PackagePath": "staticwebassets\\Photos"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\71dd5953-b392-4661-a390-1e225003e1a9.jfif",
+      "PackagePath": "staticwebassets\\Photos\\71dd5953-b392-4661-a390-1e225003e1a9.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\7fa34ec1-df92-4fe0-ab3d-6e6190b7e79f.jfif",
+      "PackagePath": "staticwebassets\\Photos\\7fa34ec1-df92-4fe0-ab3d-6e6190b7e79f.jfif"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\84216dad-58b4-49ca-80be-3a3cbce02b07.jfif",
@@ -35,6 +47,10 @@
     {
       "Id": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\9afd26a0-e11e-46c5-8ef5-ecab13e368fd.jfif",
       "PackagePath": "staticwebassets\\Photos\\9afd26a0-e11e-46c5-8ef5-ecab13e368fd.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\bb515820-80c4-4f27-8244-d67606afdd27.jfif",
+      "PackagePath": "staticwebassets\\Photos\\bb515820-80c4-4f27-8244-d67606afdd27.jfif"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\c3ac5ad2-f5b7-43ab-ac8d-5ceac444319a.jfif",

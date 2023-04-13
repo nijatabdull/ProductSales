@@ -31,6 +31,42 @@ services:
         context: .
         dockerfile: Services/Basket/ProductSale.Service.Basket/DockerFile
 
+  photostock.api:
+    image: photostock_api_image
+    build: 
+      context: .
+      dockerfile: Services/Photo/ProductSale.Service.Photo/DockerFile
+
+  discount.api:
+    image: discount_api_image
+    build:
+        context: .
+        dockerfile: Services/Discount/ProductSale.Service.Discount/DockerFile
+
+  fakepayment.api:
+    image: fakepayment_api_image
+    build: 
+      context: .
+      dockerfile: Services/FakePayment/ProductSale.Service.FakePayment/DockerFile
+  
+  order.api:
+    image: order_api_image
+    build: 
+      context: .
+      dockerfile: Services/Order/ProductSale.Services.Order.API/DockerFile
+
+  gateway.api:
+    image: gateway_api_image
+    build: 
+      context: .
+      dockerfile: Gateway/ProductSale.Gateway/DockerFile
+
+  client.api:
+    image: client_api_image
+    build: 
+      context: .
+      dockerfile: Clients/ProductSale.Web/DockerFile
+
 volumes:
   catalogdb_volume:
   discountdb_volume:

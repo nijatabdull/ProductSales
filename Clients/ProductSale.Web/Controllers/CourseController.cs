@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProductSale.Shared.Services.Abstractions;
+using ProductSale.Web.Models.Catalog;
 using ProductSale.Web.Services.Abstractions;
+using System.Collections.Generic;
 
 namespace ProductSale.Web.Controllers
 {
@@ -26,20 +28,20 @@ namespace ProductSale.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> Create()
         {
-            var categories = await _catalogService.GetAllCategoriesAsync();
+            IEnumerable<CategoryViewModel> categories = await _catalogService.GetAllCategoriesAsync();
 
-            using Stream stream = System.IO.File.OpenRead("C:\\Users\\Admin\\Pictures\\test.jfif");
+            //using Stream stream = System.IO.File.OpenRead("C:\\Users\\Admin\\Pictures\\test.jfif");
 
-            FormFile formFile = new (stream, 0, stream.Length, "photo", "test.jfif");
+            //FormFile formFile = new (stream, 0, stream.Length, "photo", "test.jfif");
 
-            var photo = await _photoService.Upload(formFile);
+            //var photo = await _photoService.Upload(formFile);
 
             await _catalogService.AddCourseAsync(new Models.Catalog.CourseViewModel()
             {
                 CategoryId = categories.First().Id,
                 Name = "Java",
                 Price = 31,
-                Picture = photo?.Url,
+                Picture = "test"/*photo?.Url*/,
                 UserId = _userProvider.GetUserId,
             });
 

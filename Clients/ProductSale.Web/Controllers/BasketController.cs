@@ -49,7 +49,7 @@ namespace ProductSale.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> ApplyDiscount()
         {
-            string discountCode = "Aasd";
+            string discountCode = "ABC";
 
             await _basketService.ApplyDiscount(discountCode);
 
