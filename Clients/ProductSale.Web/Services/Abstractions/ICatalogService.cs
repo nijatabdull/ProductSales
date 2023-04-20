@@ -9,7 +9,7 @@ namespace ProductSale.Web.Services.Abstractions
         Task<IEnumerable<CourseViewModel>> GetCoursesByUserIdAsync(string userId);
         Task<bool> DeleteCourseAsync(string courseId);  
         Task<CourseViewModel> GetCourseByIdAsync(string courseId);
-        Task<bool> AddCourseAsync(CourseViewModel course);
-        Task<bool> UpdateCourseAsync(CourseViewModel course);
+        Task<bool> AddCourseAsync(CourseCreateInput course);
+        Task<bool> UpdateCourseAsync(CourseUpdateInput course);
     }
 }

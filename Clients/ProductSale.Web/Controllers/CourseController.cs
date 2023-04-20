@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using ProductSale.Shared.Services.Abstractions;
 using ProductSale.Web.Models.Catalog;
 using ProductSale.Web.Services.Abstractions;
-using System.Collections.Generic;
 
 namespace ProductSale.Web.Controllers
 {
@@ -10,42 +10,43 @@ namespace ProductSale.Web.Controllers
     {
         private readonly ICatalogService _catalogService;
         private readonly IUserProvider _userProvider;
-        private readonly IPhotoService _photoService;
 
-        public CourseController(ICatalogService catalogService, IUserProvider userProvider, IPhotoService photoService)
+        public CourseController(ICatalogService catalogService, IUserProvider userProvider)
         {
             _catalogService = catalogService;
             _userProvider = userProvider;
-            _photoService = photoService;
         }
 
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            return View(await _catalogService.GetAllCoursesAsync());
+            return View(await _catalogService.GetCoursesByUserIdAsync(_userProvider.GetUserId));
         }
 
         [HttpGet]
         public async Task<IActionResult> Create()
         {
-            IEnumerable<CategoryViewModel> categories = await _catalogService.GetAllCategoriesAsync();
+            var categories = await _catalogService.GetAllCategoriesAsync();
 
-            //using Stream stream = System.IO.File.OpenRead("C:\\Users\\Admin\\Pictures\\test.jfif");
+            ViewBag.categoryList = new SelectList(categories, "Id", "Name");
 
-            //FormFile formFile = new (stream, 0, stream.Length, "photo", "test.jfif");
+            return View();
+        }
 
-            //var photo = await _photoService.Upload(formFile);
-
-            await _catalogService.AddCourseAsync(new Models.Catalog.CourseViewModel()
+        [HttpPost]
+        public async Task<IActionResult> Create(CourseCreateInput courseCreateInput)
+        {
+            var categories = await _catalogService.GetAllCategoriesAsync();
+            ViewBag.categoryList = new SelectList(categories, "Id", "Name");
+            if (!ModelState.IsValid)
             {
-                CategoryId = categories.First().Id,
-                Name = "Java",
-                Price = 31,
-                Picture = "test"/*photo?.Url*/,
-                UserId = _userProvider.GetUserId,
-            });
+                return View();
+            }
+            courseCreateInput.UserId = _userProvider.GetUserId;
 
-            return RedirectToAction("Index");
+            await _catalogService.AddCourseAsync(courseCreateInput);
+
+            return RedirectToAction(nameof(Index));
         }
 
         [HttpGet]
@@ -57,21 +58,44 @@ namespace ProductSale.Web.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Update()
+        public async Task<IActionResult> Update(string id)
         {
-            await _catalogService.UpdateCourseAsync(new Models.Catalog.CourseViewModel()
-            {
-                Id = "6404f7124f728397ad79567c",
-                Name = "Python",
-                CategoryId = "63e47fe7ee26be4f885d321f",
-                CategoryViewModel = new Models.Catalog.CategoryViewModel(),
-                FeatureViewModel= new Models.Catalog.FeatureViewModel(),
-                Picture = "fuck",
-                Price= 31,
-                UserId = _userProvider.GetUserId
-            });
+            CourseViewModel course = await _catalogService.GetCourseByIdAsync(id);
+            var categories = await _catalogService.GetAllCategoriesAsync();
 
-            return RedirectToAction("Index");
+            if (course == null)
+            {
+                //mesaj göster
+                RedirectToAction(nameof(Index));
+            }
+            ViewBag.categoryList = new SelectList(categories, "Id", "Name", course.Id);
+            CourseUpdateInput courseUpdateInput = new()
+            {
+                Id = course.Id,
+                Name = course.Name,
+                Description = course.Description,
+                Price = course.Price,
+                Feature = course.FeatureViewModel,
+                CategoryId = course.CategoryId,
+                UserId = course.UserId,
+                Picture = course.Picture
+            };
+
+            return View(courseUpdateInput);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(CourseUpdateInput courseUpdateInput)
+        {
+            var categories = await _catalogService.GetAllCategoriesAsync();
+            ViewBag.categoryList = new SelectList(categories, "Id", "Name", courseUpdateInput.Id);
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+            await _catalogService.UpdateCourseAsync(courseUpdateInput);
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }

@@ -9,6 +9,7 @@ using ProductSale.Service.Catalog.Statics.Models;
 using ProductSale.Shared.Infrastructure.Response;
 using ProductSale.Shared.Infrastructure.Response.Base;
 using ProductSale.Shared.Infrastructure.MassTransit.Events;
+using static MassTransit.Logging.OperationName;
 
 namespace ProductSale.Service.Catalog.Services.Concretes
 {
@@ -114,6 +115,25 @@ namespace ProductSale.Service.Catalog.Services.Concretes
                 return new SuccessResponse<object>();
             else
                 return new ErrorResponse("not deleted");
+        }
+
+        public async Task<Response> GetAllByUserIdAsync(string userId)
+        {
+            var courses = await _courses.Find<Course>(x => x.UserId == userId).ToListAsync();
+
+            if (courses.Any())
+            {
+                foreach (var course in courses)
+                {
+                    course.Category = await _categories.Find<Category>(x => x.Id == course.CategoryId).FirstAsync();
+                }
+            }
+            else
+            {
+                courses = new List<Course>();
+            }
+
+            return new SuccessResponse<List<CourseDto>>(_mapper.Map<List<CourseDto>>(courses));
         }
     }
 }

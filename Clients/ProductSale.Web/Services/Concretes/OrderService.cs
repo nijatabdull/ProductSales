@@ -52,7 +52,7 @@ namespace ProductSale.Web.Services.Concretes
                 }
             };
 
-            basket.BasketItemViewModels.ForEach(x =>
+            basket.BasketItems.ForEach(x =>
             {
                 orderCreateInput.OrderItemViewModels.Add(new OrderItemViewModel()
                 {
@@ -103,7 +103,7 @@ namespace ProductSale.Web.Services.Concretes
                 }
             };
 
-            basket.BasketItemViewModels.ForEach(x =>
+            basket.BasketItems.ForEach(x =>
             {
                 orderCreateInput.OrderItemViewModels.Add(new OrderItemViewModel()
                 {
