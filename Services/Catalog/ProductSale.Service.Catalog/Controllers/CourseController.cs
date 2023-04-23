@@ -42,5 +42,11 @@ namespace ProductSale.Service.Catalog.Controllers
         {
             return await ResultAsync(_courseService.DeleteAsync(id));
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllByUserId(string userId)
+        {
+            return await ResultAsync(_courseService.GetAllByUserIdAsync(userId));
+        }
     }
 }

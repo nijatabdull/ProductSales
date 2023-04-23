@@ -1,20 +1,37 @@
 ﻿using ProductSale.Web.Models.Catalog;
 using ProductSale.Web.Services.Abstractions;
 using ProductSale.Shared.Infrastructure.Response;
+using ProductSale.Web.Models;
 
 namespace ProductSale.Web.Services.Concretes
 {
     public class CatalogService : ICatalogService
     {
         private readonly HttpClient _httpClient;
+        private readonly IPhotoService _photoService;
+        private readonly string _photoStockUrl;
 
-        public CatalogService(HttpClient httpClient)
+        public CatalogService(HttpClient httpClient, IPhotoService photoService, IConfiguration configuration)
         {
             _httpClient = httpClient;
+            _photoService = photoService;
+            _photoStockUrl = configuration["AppSetting:PhotoStockUrl"];
         }
 
-        public async Task<bool> AddCourseAsync(CourseViewModel course)
+        private string GetPhotoStockUrl(string photoUrl)
         {
+            return $"{_photoStockUrl}/photos/{photoUrl}";
+        }
+
+        public async Task<bool> AddCourseAsync(CourseCreateInput course)
+        {
+            var resultPhotoService = await _photoService.Upload(course.PhotoFormFile);
+
+            if (resultPhotoService != null)
+            {
+                course.Picture = resultPhotoService.Url;
+            }
+
             var response = await _httpClient.PostAsJsonAsync("course/Create", course);
 
             return response.IsSuccessStatusCode;
@@ -46,7 +63,13 @@ namespace ProductSale.Web.Services.Concretes
             if (response.IsSuccessStatusCode is false)
                 return default;
 
-            SuccessResponse<List<CourseViewModel>> successResponse = await response.Content.ReadFromJsonAsync<SuccessResponse<List<CourseViewModel>>>();
+            SuccessResponse<List<CourseViewModel>> successResponse = await response
+                        .Content.ReadFromJsonAsync<SuccessResponse<List<CourseViewModel>>>();
+
+            successResponse.Data.ForEach(x =>
+            {
+                x.Picture = GetPhotoStockUrl(x.Picture);
+            });
 
             return successResponse.Data;
         }
@@ -58,18 +81,43 @@ namespace ProductSale.Web.Services.Concretes
             if (response.IsSuccessStatusCode is false)
                 return default;
 
-            SuccessResponse<CourseViewModel> successResponse = await response.Content.ReadFromJsonAsync<SuccessResponse<CourseViewModel>>();
+            SuccessResponse<CourseViewModel> successResponse = await response
+                    .Content.ReadFromJsonAsync<SuccessResponse<CourseViewModel>>();
+
+            successResponse.Data.Picture = GetPhotoStockUrl(successResponse.Data.Picture);
 
             return successResponse.Data;
         }
 
-        public Task<IEnumerable<CourseViewModel>> GetCoursesByUserIdAsync(string userId)
+        public async Task<IEnumerable<CourseViewModel>> GetCoursesByUserIdAsync(string userId)
         {
-            throw new NotImplementedException();
+            var response = await _httpClient.GetAsync($"course/get-all-by-user-id?userId={userId}");
+
+            if (!response.IsSuccessStatusCode)
+            {
+                return null;
+            }
+
+            var responseSuccess = await response.Content.ReadFromJsonAsync<SuccessResponse<List<CourseViewModel>>>();
+
+            responseSuccess.Data.ForEach(x =>
+            {
+                x.Picture = GetPhotoStockUrl(x.Picture);
+            });
+
+            return responseSuccess.Data;
         }
 
-        public async Task<bool> UpdateCourseAsync(CourseViewModel course)
+        public async Task<bool> UpdateCourseAsync(CourseUpdateInput course)
         {
+            var resultPhotoService = await _photoService.Upload(course.PhotoFormFile);
+
+            if (resultPhotoService != null)
+            {
+                await _photoService.Delete(course.Picture);
+                course.Picture = resultPhotoService.Url;
+            }
+
             var response = await _httpClient.PutAsJsonAsync("course/update", course);
 
             return response.IsSuccessStatusCode;

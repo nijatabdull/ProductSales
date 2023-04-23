@@ -24,8 +24,6 @@ try
         .ConfigureServices()
         .ConfigurePipeline();
 
- 
-
 
     using var scope = app.Services.CreateScope();
 

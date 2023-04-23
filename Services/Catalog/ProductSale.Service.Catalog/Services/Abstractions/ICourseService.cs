@@ -10,5 +10,6 @@ namespace ProductSale.Service.Catalog.Services.Abstractions
         Task<Response> UpdateAsync(CourseDto courseDto);
         Task<Response> GetByIdAsync(string id);
         Task<Response> DeleteAsync(string id);
+        Task<Response> GetAllByUserIdAsync(string userId);
     }
 }

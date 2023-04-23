@@ -1,7 +1,6 @@
 ﻿using ProductSale.Shared.Infrastructure.Response;
 using ProductSale.Shared.Services.Abstractions;
 using ProductSale.Web.Models.Basket;
-using ProductSale.Web.Models.Discount;
 using ProductSale.Web.Services.Abstractions;
 
 namespace ProductSale.Web.Services.Concretes
@@ -25,9 +24,9 @@ namespace ProductSale.Web.Services.Concretes
 
             if (basket is not null)
             {
-                if (basket.BasketItemViewModels.Any(x => x.CourseId == basketItemViewModel.CourseId) is false)
+                if (basket.BasketItems.Any(x => x.CourseId == basketItemViewModel.CourseId) is false)
                 {
-                    basket.BasketItemViewModels.Add(basketItemViewModel);
+                    basket.BasketItems.Add(basketItemViewModel);
 
                     await SaveOrUpdate(basket);
                 }
@@ -39,7 +38,7 @@ namespace ProductSale.Web.Services.Concretes
                     UserId = _userProvider.GetUserId
                 };
 
-                basketViewModelNew.BasketItemViewModels = new List<BasketItemViewModel> { basketItemViewModel };
+                basketViewModelNew.BasketItems = new List<BasketItemViewModel> { basketItemViewModel };
 
                 await SaveOrUpdate(basketViewModelNew);
             }
@@ -57,18 +56,18 @@ namespace ProductSale.Web.Services.Concretes
 
             if(discountViewModel is null) return false;
 
-            basket.DiscountCode = discountViewModel.Code;
+            basket.ApplyDiscount(discountViewModel.Code, discountViewModel.Rate);
 
-           return await SaveOrUpdate(basket);
+            return await SaveOrUpdate(basket);
         }
 
         public async Task<bool?> CancelApplyDiscount()
         {
             var basket = await Get();
 
-            if (basket is null) return false;
+            if (basket is null || basket.DiscountCode is null) return false;
 
-            basket.DiscountCode = default;
+            basket.CancelDiscount(); 
 
             return await SaveOrUpdate(basket);
         }
@@ -89,13 +88,16 @@ namespace ProductSale.Web.Services.Concretes
                 return false;
             }
 
-            var basketItem = basket.BasketItemViewModels.First(x => x.CourseId == courseId);
+            var basketItem = basket.BasketItems.First(x => x.CourseId == courseId);
 
-            bool isDeleted = basket.BasketItemViewModels.Remove(basketItem);
+            bool isDeleted = basket.BasketItems.Remove(basketItem);
 
             if (isDeleted is false) return false;
 
-            basket.DiscountCode = default;
+            if (!basket.BasketItems.Any())
+            {
+                basket.DiscountCode = null;
+            }
 
             return await SaveOrUpdate(basket);
         }
@@ -106,22 +108,10 @@ namespace ProductSale.Web.Services.Concretes
 
             if (response.IsSuccessStatusCode)
             {
-                var res = await response.Content.ReadFromJsonAsync<SuccessResponse<BasketViewModel>>();
+                SuccessResponse<BasketViewModel> successResponse = await response
+                            .Content.ReadFromJsonAsync<SuccessResponse<BasketViewModel>>();
 
-                var basket = res.Data;
-
-                if(string.IsNullOrEmpty(basket.DiscountCode) is false)
-                {
-                    DiscountViewModel discountViewModel = await _discountService
-                                            .GetDiscountByCode(basket.DiscountCode);
-
-                    basket.BasketItemViewModels.ForEach(x =>
-                    {
-                        x.DiscountAppliedPrice = x.Price - (x.Price * discountViewModel.Rate) / 100;
-                    });
-                }
-
-                return basket;
+                return successResponse.Data;
             }
 
             return default;

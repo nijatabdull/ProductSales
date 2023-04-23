@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using ProductSale.Web.Models.Catalog;
+using ProductSale.Web.Models.Discount;
 using ProductSale.Web.Services.Abstractions;
 
 namespace ProductSale.Web.Controllers
@@ -25,14 +27,13 @@ namespace ProductSale.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> AddBasketItem(string courseId)
         {
-           var course = await _catalogService.GetCourseByIdAsync(courseId);
+           CourseViewModel course = await _catalogService.GetCourseByIdAsync(courseId);
 
             await _basketService.AddBasketItem(new Models.Basket.BasketItemViewModel()
             {
                 CourseId= courseId,
                 CourseName= course.Name,
-                Price = 31,
-                Quantity = 1
+                Price = course.Price,
             });
 
             return RedirectToAction("Index");
@@ -46,14 +47,18 @@ namespace ProductSale.Web.Controllers
             return RedirectToAction("Index");
         }
 
-        [HttpGet]
-        public async Task<IActionResult> ApplyDiscount()
+        [HttpPost]
+        public async Task<IActionResult> ApplyDiscount(DiscountApplyCode discountApplyCode)
         {
-            string discountCode = "Aasd";
+            if (!ModelState.IsValid)
+            {
+                TempData["discountError"] = ModelState.Values.SelectMany(x => x.Errors).Select(x => x.ErrorMessage).First();
+                return RedirectToAction(nameof(Index));
+            }
+            var discountStatus = await _basketService.ApplyDiscount(discountApplyCode.Code);
 
-            await _basketService.ApplyDiscount(discountCode);
-
-            return RedirectToAction("Index");
+            TempData["discountStatus"] = discountStatus;
+            return RedirectToAction(nameof(Index));
         }
 
         [HttpGet]

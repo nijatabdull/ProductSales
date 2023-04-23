@@ -15,8 +15,20 @@ namespace ProductSale.Web.Models.Catalog
         public string Picture { get; set; }
         [JsonPropertyName("categoryId")]
         public string CategoryId { get; set; }
+        [JsonPropertyName("description")]
+        public string Description { get; set; }
 
+        public string ShortDescription
+        {
+            get => Description.Length > 100 ? Description.Substring(0, 100) + "..." : Description;
+        }
+
+        public DateTime CreatedTime { get; set; }
+
+        [JsonPropertyName("categoryDto")]
         public CategoryViewModel CategoryViewModel { get; set; }
+
+        [JsonPropertyName("featureDto")]
         public FeatureViewModel FeatureViewModel { get; set; }
     }
 }
