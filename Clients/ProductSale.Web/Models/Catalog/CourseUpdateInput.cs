@@ -6,13 +6,13 @@ namespace ProductSale.Web.Models.Catalog
     {
         public string Id { get; set; }
 
-        [Display(Name = "Kurs ismi")]
+        [Display(Name = "Kurs adı")]
         public string Name { get; set; }
 
-        [Display(Name = "Kurs açıklama")]
+        [Display(Name = "Kurs açıqlama")]
         public string Description { get; set; }
 
-        [Display(Name = "Kurs fiyat")]
+        [Display(Name = "Kurs qiymət")]
         public decimal Price { get; set; }
 
         public string UserId { get; set; }
@@ -20,10 +20,10 @@ namespace ProductSale.Web.Models.Catalog
         public string Picture { get; set; }
         public FeatureViewModel Feature { get; set; }
 
-        [Display(Name = "Kurs kategori")]
+        [Display(Name = "Kurs kateqoriya")]
         public string CategoryId { get; set; }
 
-        [Display(Name = "Kurs Resim")]
+        [Display(Name = "Kurs foto")]
         public IFormFile PhotoFormFile { get; set; }
     }
 }

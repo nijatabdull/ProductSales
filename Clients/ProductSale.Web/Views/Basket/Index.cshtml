@@ -11,16 +11,16 @@
         <div class="card">
             <div class="card-body">
 
-                <h5 class="card-title">Sepet</h5>
+                <h5 class="card-title">Səbət</h5>
 
                 @if (Model != null && Model.BasketItems.Any())
                 {
                     <table class="table table-striped">
 
                         <tr>
-                            <th>Kurs isim</th>
-                            <th>Kurs fiyat</th>
-                            <th>İşlemler</th>
+                            <th>Kurs ad:</th>
+                            <th>Kurs Qiymət:</th>
+                            <th>Proseslər</th>
                         </tr>
 
                         @foreach (var item in Model.BasketItems)
@@ -31,7 +31,7 @@
                                     @item.GetCurrentPrice TL @(Model.HasDiscount ? $"(%{Model.DiscountRate.Value} uygulandı)" : "")
                                 </td>
                                 <td>
-                                    <a class="btn btn-danger" asp-controller="Basket" asp-action="RemoveBasketItem" asp-route-courseId="@item.CourseId">sil</a>
+                                    <a class="btn btn-danger" asp-controller="Basket" asp-action="RemoveBasketItem" asp-route-courseId="@item.CourseId">Sil</a>
                                 </td>
                             </tr>
                         }
@@ -40,7 +40,7 @@
                         {
 
                             <tr>
-                                <td>Indirim oranı</td>
+                                <td>Endirim faizi</td>
                                 <th colspan="2"> % @Model.DiscountRate.Value</th>
                             </tr>
 
@@ -48,7 +48,7 @@
 
                         <tr>
                             <td>@(Model.HasDiscount ? "İndirimli fiyat" : "Toplam fiyat")</td>
-                            <th colspan="2">@Model.TotalPrice TL</th>
+                            <th colspan="2">@Model.TotalPrice AZN</th>
                         </tr>
                     </table>
 
@@ -57,31 +57,31 @@
                         {
                             <div class="alert alert-success">
                                 "@Model.DiscountCode"indirim kodu uygulandı
-                                <a asp-controller="Basket" asp-action="CancelApplyDiscount"> (iptal et)</a>
+                                <a asp-controller="Basket" asp-action="CancelApplyDiscount"> (Ləğv et)</a>
                             </div>
 
                         }
 
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" name="DiscountApplyInput.Code">
-                            <button class="btn btn-outline-secondary" type="submit">Uygula</button>
+                            <button class="btn btn-outline-secondary" type="submit">Tətbiq et</button>
                         </div>
 
                         @if (TempData["discountStatus"] != null && (bool)TempData["discountStatus"] == false)
                         {
-                            <div class="text-danger">indirim kodu geçersiz</div>
+                            <div class="text-danger">Endirim kodu istifadəsizdir.</div>
                         }
                         @if (TempData["discountError"] != null)
                         {
                             <div class="text-danger">@TempData["discountError"]</div>
                         }
                     </form>
-                    <a class="btn btn-success" asp-controller="Order" asp-action="Checkout">Ödeme bilgileri</a>
-                    <a class="btn btn-warning" asp-controller="Home" asp-action="Index">Kursları incelemeye devam et</a>
+                    <a class="btn btn-success" asp-controller="Order" asp-action="Checkout">Ödəniş məlumatları</a>
+                    <a class="btn btn-warning" asp-controller="Home" asp-action="Index">Ana səhifə</a>
                 }
                 else
                 {
-                    <div class="alert alert-info">Sepet boş</div>
+                    <div class="alert alert-info">Boşdur</div>
                 }
             </div>
         </div>

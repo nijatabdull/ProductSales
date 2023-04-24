@@ -10,18 +10,18 @@
             <div class="card-body">
                 <h5 class="card-title">Kurslar</h5>
 
-                <a asp-controller="Course" asp-action="Create" class="btn btn-primary mb-3">Kurs oluştur</a>
-                @if (Model.Any())
+                <a asp-controller="Course" asp-action="Create" class="btn btn-primary mb-3">Kurs yarat</a>
+                @if (Model!=null && Model.Any())
                 {
                     <table class="table table-striped table-bordered">
                         <thead>
                             <tr>
-                                <th>Resim</th>
-                                <th>Kurs isim</th>
-                                <th>Fiyat</th>
-                                <th>Süre</th>
-                                <th>Kategori</th>
-                                <th>İşlemler</th>
+                                <th>Foto</th>
+                                <th>Kurs adı</th>
+                                <th>Qiymət</th>
+                                <th>Tarix</th>
+                                <th>Kateqoriya</th>
+                                <th>Proseslər</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -46,7 +46,7 @@
                 else
                 {
                     <div class="alert alert-info">
-                        Kayıtlı kurs bulunamadı
+                        Kurs yoxdur
                     </div>
                 }
             </div>

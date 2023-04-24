@@ -255,3 +255,4 @@ C:\Users\Nicat\Desktop\Product Sales\ProductSales\IdentityServer\ProductSale.Ide
 C:\Users\Nicat\Desktop\Product Sales\ProductSales\IdentityServer\ProductSale.IdentityServer\obj\Debug\net6.0\ProductSale.IdentityServer.pdb
 C:\Users\Nicat\Desktop\Product Sales\ProductSales\IdentityServer\ProductSale.IdentityServer\obj\Debug\net6.0\ProductSale.IdentityServer.genruntimeconfig.cache
 C:\Users\Nicat\Desktop\Product Sales\ProductSales\IdentityServer\ProductSale.IdentityServer\obj\Debug\net6.0\ref\ProductSale.IdentityServer.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\IdentityServer\ProductSale.IdentityServer\bin\Debug\net6.0\keys\is-signing-key-8B7AF9A635FE22DBC3E68C1513C0716E.json

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "np3FLEzjDOb2E/rlMmYQNIh2bnxu02shWdyVdrfvbCc=",
+  "Hash": "R7B+aFxe+l9gOxZm7WQFKN02sTLkLj1bj97SIcJQVaA=",
   "Source": "ProductSale.Service.Photo",
   "BasePath": "_content/ProductSale.Service.Photo",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Photos\\27d788b1-8a8b-4860-8e4f-79773cd8ec4d"
+    },
+    {
+      "Identity": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\3d51b42d-52cc-4eba-97fe-ef3412df36ab.jfif",
+      "SourceId": "ProductSale.Service.Photo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\",
+      "BasePath": "_content/ProductSale.Service.Photo",
+      "RelativePath": "Photos/3d51b42d-52cc-4eba-97fe-ef3412df36ab.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photos\\3d51b42d-52cc-4eba-97fe-ef3412df36ab.jfif"
     },
     {
       "Identity": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\3e909efe-fddb-497d-b7a8-6f09c2e4fe7b.jfif",
@@ -338,6 +355,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Photos\\d1c606cb-bb77-4b7b-97de-9c8887b59cb3.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\dce5015d-9c38-4139-9b04-7ab3fa190846.jfif",
+      "SourceId": "ProductSale.Service.Photo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\",
+      "BasePath": "_content/ProductSale.Service.Photo",
+      "RelativePath": "Photos/dce5015d-9c38-4139-9b04-7ab3fa190846.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photos\\dce5015d-9c38-4139-9b04-7ab3fa190846.jfif"
     },
     {
       "Identity": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Photo\\ProductSale.Service.Photo\\wwwroot\\Photos\\f304b1df-1dbe-4071-8b7f-c5b158b3e6fd.jfif",
