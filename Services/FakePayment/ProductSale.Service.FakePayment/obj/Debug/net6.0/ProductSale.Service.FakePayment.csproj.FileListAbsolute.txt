@@ -1,0 +1,141 @@
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\appsettings.json
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Service.FakePayment.exe
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Service.FakePayment.deps.json
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Service.FakePayment.runtimeconfig.json
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Service.FakePayment.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Service.FakePayment.pdb
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.AssemblyInfo.cs
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets\msbuild.ProductSale.Service.FakePayment.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets\msbuild.build.ProductSale.Service.FakePayment.props
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ProductSale.Service.FakePayment.props
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ProductSale.Service.FakePayment.props
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\scopedcss\bundle\ProductSale.Service.FakePayment.styles.css
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.csproj.CopyComplete
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\refint\ProductSale.Service.FakePayment.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.pdb
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.genruntimeconfig.cache
+C:\Users\Admin\Desktop\ProductSales\ProductSale.Microservices\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ref\ProductSale.Service.FakePayment.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\appsettings.json
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Service.FakePayment.exe
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Service.FakePayment.deps.json
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Service.FakePayment.runtimeconfig.json
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Service.FakePayment.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Service.FakePayment.pdb
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.AssemblyInfo.cs
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets\msbuild.ProductSale.Service.FakePayment.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets\msbuild.build.ProductSale.Service.FakePayment.props
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ProductSale.Service.FakePayment.props
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ProductSale.Service.FakePayment.props
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\scopedcss\bundle\ProductSale.Service.FakePayment.styles.css
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.csproj.CopyComplete
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\refint\ProductSale.Service.FakePayment.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.pdb
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.genruntimeconfig.cache
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ref\ProductSale.Service.FakePayment.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\MassTransit.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\MassTransit.Abstractions.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\MassTransit.AspNetCoreIntegration.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\MassTransit.RabbitMqTransport.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Shared.dll
+C:\Users\Admin\Desktop\ProductSales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Shared.pdb
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\appsettings.json
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Service.FakePayment.exe
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Service.FakePayment.deps.json
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Service.FakePayment.runtimeconfig.json
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Service.FakePayment.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Service.FakePayment.pdb
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\MassTransit.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\MassTransit.Abstractions.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\MassTransit.AspNetCoreIntegration.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\MassTransit.RabbitMqTransport.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Shared.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\bin\Debug\net6.0\ProductSale.Shared.pdb
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.csproj.AssemblyReference.cache
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.AssemblyInfoInputs.cache
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.AssemblyInfo.cs
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.csproj.CoreCompileInputs.cache
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets\msbuild.ProductSale.Service.FakePayment.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets\msbuild.build.ProductSale.Service.FakePayment.props
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ProductSale.Service.FakePayment.props
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ProductSale.Service.FakePayment.props
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\scopedcss\bundle\ProductSale.Service.FakePayment.styles.css
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.csproj.CopyComplete
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\refint\ProductSale.Service.FakePayment.dll
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.pdb
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ProductSale.Service.FakePayment.genruntimeconfig.cache
+C:\Users\Nicat\Desktop\Product Sales\ProductSales\Services\FakePayment\ProductSale.Service.FakePayment\obj\Debug\net6.0\ref\ProductSale.Service.FakePayment.dll
