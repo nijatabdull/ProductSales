@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "z5Sk6QMGeC5+lDOfajfB+ZAhId9qD9E6jVFA/ZNtx4w+ufp5aVb/CoUfV0SE/8wdEVnw4i43HfiLbG9xW+1LOg==",
+  "dgSpecHash": "qB0km4RGkA6oak7h4juSDZGokWTpeB7kChBlAlm/N8V4TQS9Guo1DZ45Ihi2N78PIGWcGFOkxFSh+7tkyAuo+w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.Core\\ProductSale.Services.Order.Core.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.Core\\ProductSale.Services.Order.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Nicat\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
-    "C:\\Users\\Nicat\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\Nicat\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

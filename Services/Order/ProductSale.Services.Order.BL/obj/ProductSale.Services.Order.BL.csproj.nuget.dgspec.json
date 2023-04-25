@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.BL\\ProductSale.Services.Order.BL.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.BL\\ProductSale.Services.Order.BL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.BL\\ProductSale.Services.Order.BL.csproj": {
+    "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.BL\\ProductSale.Services.Order.BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.BL\\ProductSale.Services.Order.BL.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.BL\\ProductSale.Services.Order.BL.csproj",
         "projectName": "ProductSale.Services.Order.BL",
-        "projectPath": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.BL\\ProductSale.Services.Order.BL.csproj",
-        "packagesPath": "C:\\Users\\Nicat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.BL\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.BL\\ProductSale.Services.Order.BL.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.BL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Nicat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,20 +22,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "\\\\files.aist.group\\NugetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.Core\\ProductSale.Services.Order.Core.csproj": {
-                "projectPath": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.Core\\ProductSale.Services.Order.Core.csproj"
+              "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.Core\\ProductSale.Services.Order.Core.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.Core\\ProductSale.Services.Order.Core.csproj"
               },
-              "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.DAL\\ProductSale.Services.Order.DAL.csproj": {
-                "projectPath": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.DAL\\ProductSale.Services.Order.DAL.csproj"
+              "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.DAL\\ProductSale.Services.Order.DAL.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.DAL\\ProductSale.Services.Order.DAL.csproj"
               },
-              "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Shared\\ProductSale.Shared\\ProductSale.Shared.csproj": {
-                "projectPath": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Shared\\ProductSale.Shared\\ProductSale.Shared.csproj"
+              "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Shared\\ProductSale.Shared\\ProductSale.Shared.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Shared\\ProductSale.Shared\\ProductSale.Shared.csproj"
               }
             }
           }
@@ -82,24 +80,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.Core\\ProductSale.Services.Order.Core.csproj": {
+    "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.Core\\ProductSale.Services.Order.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.Core\\ProductSale.Services.Order.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.Core\\ProductSale.Services.Order.Core.csproj",
         "projectName": "ProductSale.Services.Order.Core",
-        "projectPath": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.Core\\ProductSale.Services.Order.Core.csproj",
-        "packagesPath": "C:\\Users\\Nicat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.Core\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.Core\\ProductSale.Services.Order.Core.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Nicat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -107,6 +102,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "\\\\files.aist.group\\NugetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -146,24 +142,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.DAL\\ProductSale.Services.Order.DAL.csproj": {
+    "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.DAL\\ProductSale.Services.Order.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.DAL\\ProductSale.Services.Order.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.DAL\\ProductSale.Services.Order.DAL.csproj",
         "projectName": "ProductSale.Services.Order.DAL",
-        "projectPath": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.DAL\\ProductSale.Services.Order.DAL.csproj",
-        "packagesPath": "C:\\Users\\Nicat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.DAL\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.DAL\\ProductSale.Services.Order.DAL.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Nicat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -171,14 +164,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "\\\\files.aist.group\\NugetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.Core\\ProductSale.Services.Order.Core.csproj": {
-                "projectPath": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.Core\\ProductSale.Services.Order.Core.csproj"
+              "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.Core\\ProductSale.Services.Order.Core.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Services\\Order\\ProductSale.Services.Order.Core\\ProductSale.Services.Order.Core.csproj"
               }
             }
           }
@@ -224,24 +218,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Shared\\ProductSale.Shared\\ProductSale.Shared.csproj": {
+    "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Shared\\ProductSale.Shared\\ProductSale.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Shared\\ProductSale.Shared\\ProductSale.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Shared\\ProductSale.Shared\\ProductSale.Shared.csproj",
         "projectName": "ProductSale.Shared",
-        "projectPath": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Shared\\ProductSale.Shared\\ProductSale.Shared.csproj",
-        "packagesPath": "C:\\Users\\Nicat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nicat\\Desktop\\Product Sales\\ProductSales\\Shared\\ProductSale.Shared\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Shared\\ProductSale.Shared\\ProductSale.Shared.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\ProductSales\\ProductSales\\Shared\\ProductSale.Shared\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Nicat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -249,6 +240,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "\\\\files.aist.group\\NugetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -288,7 +280,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
