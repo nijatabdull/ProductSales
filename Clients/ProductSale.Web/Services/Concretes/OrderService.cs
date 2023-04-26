@@ -22,7 +22,7 @@ namespace ProductSale.Web.Services.Concretes
             _userProvider = userProvider;
         }
 
-        public async Task<OrderCreatedViewModel> CreateOrder(CheckoutInputModel checkoutInputModel)
+        public async Task<OrderCreatedViewModel> CreateOrder(CheckoutInfoInput checkoutInputModel)
         {
             var basket = await _basketService.Get();
 
@@ -85,7 +85,7 @@ namespace ProductSale.Web.Services.Concretes
             return response.Data;   
         }
 
-        public async Task<OrderSuspendViewModel> SuspendOrder(CheckoutInputModel checkoutInputModel)
+        public async Task<OrderSuspendViewModel> SuspendOrder(CheckoutInfoInput checkoutInputModel)
         {
 
             var basket = await _basketService.Get();
@@ -110,7 +110,7 @@ namespace ProductSale.Web.Services.Concretes
                     ProductId = x.CourseId,
                     Price = x.Price,
                     ProductName = x.CourseName,
-                    PictureUrl = "asd"
+                    PictureUrl = ""
                 });
             });
 

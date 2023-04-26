@@ -8,5 +8,6 @@ namespace ProductSale.Service.Basket.Services.Abstractions
         Task<Response> Get(string userId);
         Task<Response> SaveOrUpdate(BasketDto basketDto);
         Task<Response> Delete(string userId);
+        Task ChangeCourseName(CourseNameChangeDto courseNameChangeDto);
     }
 }

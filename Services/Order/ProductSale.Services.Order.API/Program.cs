@@ -33,7 +33,7 @@ builder.Services.AddMassTransit(opt =>
             e.ConfigureConsumer<CreateOrderMessageCommandConsumer>(context);
         });
 
-        cfg.ReceiveEndpoint("course-name-change", e =>
+        cfg.ReceiveEndpoint("course-name-change-for-order", e =>
         {
             e.ConfigureConsumer<CourseNameChangedEventConsumer>(context);
         });

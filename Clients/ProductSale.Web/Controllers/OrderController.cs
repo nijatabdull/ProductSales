@@ -6,37 +6,56 @@ namespace ProductSale.Web.Controllers
 {
     public class OrderController : Controller
     {
+        private readonly IBasketService _basketService;
         private readonly IOrderService _orderService;
 
-        public OrderController(IOrderService orderService)
+        public OrderController(IBasketService basketService, IOrderService orderService)
         {
+            _basketService = basketService;
             _orderService = orderService;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Create()
+        public async Task<IActionResult> Checkout()
         {
-            CheckoutInputModel checkoutInputModel = new CheckoutInputModel()
+            var basket = await _basketService.Get();
+
+            ViewBag.basket = basket;
+            return View(new CheckoutInfoInput());
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Checkout(CheckoutInfoInput checkoutInfoInput)
+        {
+            //1. yol senkron iletişim
+            //  var orderStatus = await _orderService.CreateOrder(checkoutInfoInput);
+            // 2.yol asenkron iletişim
+            var orderSuspend = await _orderService.SuspendOrder(checkoutInfoInput);
+            if (!orderSuspend.IsSuccessed)
             {
-                Street = "Baxcali",
-                District = "Masazir",
-                Province = "Abseron",
-                ZipCode = "3169",
-                CardNumber = "4169741431697231",
-                CardName = "Kapital",
-                CVV = "456",
-                Expiration = "12/23",
-                Line = "asd"
-            };
+                var basket = await _basketService.Get();
 
-            //sycn
-            //OrderCreatedViewModel orderCreatedViewModel = await _orderService.CreateOrder();
-            //TempData["OrderId"] = orderCreatedViewModel.OrderId;
+                ViewBag.basket = basket;
 
-            //async
-            OrderSuspendViewModel orderSuspendViewModel = await _orderService.SuspendOrder(checkoutInputModel);
+                ViewBag.error = orderSuspend.Error;
 
-            return RedirectToAction("Index", "Course");
+                return View();
+            }
+            //1. yol senkron iletişim
+            //  return RedirectToAction(nameof(SuccessfulCheckout), new { orderId = orderStatus.OrderId });
+
+            //2.yol asenkron iletişim
+            return RedirectToAction(nameof(SuccessfulCheckout), new { orderId = new Random().Next(1, 1000) });
+        }
+
+        public IActionResult SuccessfulCheckout(int orderId)
+        {
+            ViewBag.orderId = orderId;
+            return View();
+        }
+
+        public async Task<IActionResult> CheckoutHistory()
+        {
+            return View(await _orderService.GetOrders());
         }
     }
 }

@@ -20,7 +20,14 @@ namespace ProductSale.Web.Models.Catalog
 
         public string ShortDescription
         {
-            get => Description.Length > 100 ? Description.Substring(0, 100) + "..." : Description;
+            get
+            {
+                if (Description is not null)
+                {
+                    return Description.Length > 100 ? Description.Substring(0, 100) + "..." : Description;
+                }
+                return string.Empty;
+            }
         }
 
         public DateTime CreatedTime { get; set; }

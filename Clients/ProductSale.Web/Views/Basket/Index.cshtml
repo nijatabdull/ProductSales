@@ -28,10 +28,10 @@
                             <tr>
                                 <td>@item.CourseName</td>
                                 <td>
-                                    @item.GetCurrentPrice TL @(Model.HasDiscount ? $"(%{Model.DiscountRate.Value} uygulandı)" : "")
+                                    @item.GetCurrentPrice AZN @(Model.HasDiscount ? $"(%{Model.DiscountRate.Value} tətbiq olundu)" : "")
                                 </td>
                                 <td>
-                                    <a class="btn btn-danger" asp-controller="Basket" asp-action="RemoveBasketItem" asp-route-courseId="@item.CourseId">Sil</a>
+                                    <a class="btn btn-danger" asp-controller="Basket" asp-action="Delete" asp-route-courseId="@item.CourseId">Sil</a>
                                 </td>
                             </tr>
                         }
@@ -47,7 +47,7 @@
                         }
 
                         <tr>
-                            <td>@(Model.HasDiscount ? "İndirimli fiyat" : "Toplam fiyat")</td>
+                            <td>@(Model.HasDiscount ? "Endirimli qiymət" : "Ümumi qiymət")</td>
                             <th colspan="2">@Model.TotalPrice AZN</th>
                         </tr>
                     </table>
@@ -56,14 +56,14 @@
                         @if (Model.HasDiscount)
                         {
                             <div class="alert alert-success">
-                                "@Model.DiscountCode"indirim kodu uygulandı
+                                "@Model.DiscountCode" endirim kodu tətbiq olundu
                                 <a asp-controller="Basket" asp-action="CancelApplyDiscount"> (Ləğv et)</a>
                             </div>
 
                         }
 
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" name="DiscountApplyInput.Code">
+                            <input type="text" class="form-control" name="DiscountApplyCode.Code">
                             <button class="btn btn-outline-secondary" type="submit">Tətbiq et</button>
                         </div>
 

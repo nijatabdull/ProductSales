@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace ProductSale.Web.Models.Catalog
 {
@@ -18,6 +19,8 @@ namespace ProductSale.Web.Models.Catalog
         public string UserId { get; set; }
 
         public string Picture { get; set; }
+
+        [JsonPropertyName("featureDto")]
         public FeatureViewModel Feature { get; set; }
 
         [Display(Name = "Kurs kateqoriya")]

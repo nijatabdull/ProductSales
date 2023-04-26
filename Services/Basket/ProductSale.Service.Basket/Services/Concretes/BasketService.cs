@@ -16,6 +16,31 @@ namespace ProductSale.Service.Basket.Services.Concretes
             _redisService = redisService;
         }
 
+        public async Task ChangeCourseName(CourseNameChangeDto courseNameChangeDto)
+        {
+            IEnumerable<RedisKey> redisKeys = _redisService.GetServer().Keys(1);
+
+            foreach (RedisKey key in redisKeys)
+            {
+                RedisValue redisValue = await _redisService.GetDb().StringGetAsync(key);
+
+                BasketDto basketDto = JsonSerializer.Deserialize<BasketDto>(redisValue);
+
+                if (basketDto is not null)
+                {
+                    basketDto.BasketItemDtos.ForEach(item =>
+                    {
+                        if (item.CourseId == courseNameChangeDto.CourseId)
+                        {
+                            item.CourseName = courseNameChangeDto.CourseName;
+                        }
+                    });
+
+                    await _redisService.GetDb().StringSetAsync(basketDto.UserId, JsonSerializer.Serialize(basketDto));
+                }
+            }
+        }
+
         public async Task<Response> Delete(string userId)
         {
            bool isDeleted = await _redisService.GetDb().KeyDeleteAsync(userId);

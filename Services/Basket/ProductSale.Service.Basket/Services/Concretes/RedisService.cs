@@ -17,5 +17,6 @@ namespace ProductSale.Service.Basket.Services.Concretes
         public void Connect() => _ConnectionMultiplexer = ConnectionMultiplexer.Connect($"{_host}:{_port}");
 
         public IDatabase GetDb(int db = 1) => _ConnectionMultiplexer.GetDatabase(db);
+        public IServer GetServer() => _ConnectionMultiplexer.GetServer(_host,_port);
     }
 }

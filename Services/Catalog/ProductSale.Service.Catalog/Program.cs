@@ -6,6 +6,8 @@ using ProductSale.Service.Catalog.Configurations.Helpers;
 using ProductSale.Service.Catalog.Services.Abstractions;
 using ProductSale.Service.Catalog.Services.Concretes;
 using ProductSale.Service.Catalog.Statics.Models;
+using ProductSale.Shared.Infrastructure.MassTransit.Events;
+using RabbitMQ.Client;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);

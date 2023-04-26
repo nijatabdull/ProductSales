@@ -2,7 +2,7 @@
 
 namespace ProductSale.Web.Models.Order
 {
-    public class CheckoutInputModel
+    public class CheckoutInfoInput
     {
         public string Province { get; set; }
         public string District { get; set; }

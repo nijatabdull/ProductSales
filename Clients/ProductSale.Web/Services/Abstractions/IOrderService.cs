@@ -5,10 +5,10 @@ namespace ProductSale.Web.Services.Abstractions
     public interface IOrderService
     {
         //sycn
-        Task<OrderCreatedViewModel> CreateOrder(CheckoutInputModel checkoutInputModel);
+        Task<OrderCreatedViewModel> CreateOrder(CheckoutInfoInput checkoutInputModel);
 
         //async - RABBIT MQ
-        Task<OrderSuspendViewModel> SuspendOrder(CheckoutInputModel checkoutInputModel);
+        Task<OrderSuspendViewModel> SuspendOrder(CheckoutInfoInput checkoutInputModel);
 
         Task<List<OrderViewModel>> GetOrders();
     }

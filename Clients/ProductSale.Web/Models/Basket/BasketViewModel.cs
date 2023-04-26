@@ -8,14 +8,15 @@ namespace ProductSale.Web.Models.Basket
         {
             _basketItems = new List<BasketItemViewModel>();
         }
-
+        [JsonPropertyName("userId")]
         public string UserId { get; set; }
-
+        [JsonPropertyName("discountCode")]
         public string DiscountCode { get; set; }
 
         public int? DiscountRate { get; set; }
         private List<BasketItemViewModel> _basketItems;
 
+        [JsonPropertyName("basketItemDtos")]
         public List<BasketItemViewModel> BasketItems
         {
             get
