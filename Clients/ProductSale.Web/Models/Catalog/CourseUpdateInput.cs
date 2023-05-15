@@ -27,6 +27,6 @@ namespace ProductSale.Web.Models.Catalog
         public string CategoryId { get; set; }
 
         [Display(Name = "Kurs foto")]
-        public IFormFile PhotoFormFile { get; set; }
+        public IFormFile? PhotoFormFile { get; set; }
     }
 }

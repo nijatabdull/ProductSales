@@ -2,6 +2,7 @@
 using ProductSale.Web.Services.Abstractions;
 using ProductSale.Shared.Infrastructure.Response;
 using ProductSale.Web.Models;
+using ProductSale.Web.Models.Photo;
 
 namespace ProductSale.Web.Services.Concretes
 {
@@ -110,12 +111,19 @@ namespace ProductSale.Web.Services.Concretes
 
         public async Task<bool> UpdateCourseAsync(CourseUpdateInput course)
         {
-            var resultPhotoService = await _photoService.Upload(course.PhotoFormFile);
-
-            if (resultPhotoService != null)
+            if(course.PhotoFormFile is not null)
             {
-                await _photoService.Delete(course.Picture);
-                course.Picture = resultPhotoService.Url;
+                PhotoViewModel resultPhotoService = await _photoService.Upload(course.PhotoFormFile);
+
+                if (resultPhotoService != null)
+                {
+                    await _photoService.Delete(course.Picture);
+                    course.Picture = resultPhotoService.Url;
+                }
+            }
+            else
+            {
+                course.Picture = course.Picture[(course.Picture.LastIndexOf("/") + 1)..];
             }
 
             var response = await _httpClient.PutAsJsonAsync("course/update", course);

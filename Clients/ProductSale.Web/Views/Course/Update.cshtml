@@ -47,10 +47,10 @@
                     </div>
 
                     <div class="mb-3">
-
-                        <label class="form-label" asp-for="PhotoFormFile"></label>
-
+                        <label asp-for="PhotoFormFile" class="form-label"></label>
                         <input type="file" asp-for="PhotoFormFile" class="form-control" />
+                        <span class="text-danger" asp-validation-for="PhotoFormFile"></span>
+                        <img src="@Model.Picture"  style="width:100px"/>
                     </div>
 
                     <button type="submit" class="btn btn-primary">Kurs yenilə</button>
