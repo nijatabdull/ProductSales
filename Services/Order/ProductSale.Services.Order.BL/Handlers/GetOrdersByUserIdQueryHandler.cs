@@ -23,11 +23,6 @@ namespace ProductSale.Services.Order.BL.Handlers
             List<Core.Models.Order> orders = await _orderDbContext.Orders.Include(x => x.OrderItems)
                 .Where(x => x.BuyerId == request.UserId).ToListAsync();
 
-            //if(orders is null || orders.Any() is false)
-            //{
-            //    return new ErrorResponse("Order is not found");
-            //}
-
             List<OrderDto> orderDtos = ObjectMapper.Mapper.Map<List<OrderDto>>(orders);
 
             return new SuccessResponse<List<OrderDto>>(orderDtos);
